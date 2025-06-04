@@ -1,0 +1,366 @@
+    /* Hero Banner Styles */
+.hero-banner {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 80px 0;
+    margin-bottom: 30px;
+}
+
+.banner-content {
+    max-width: 500px;
+}
+
+.banner-badge {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.banner-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    line-height: 1.2;
+}
+
+.banner-text {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.banner-cta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.btn-shop-now {
+    background-color: #3498db;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.btn-shop-now:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.btn-view-all {
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.btn-view-all:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.banner-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.banner-image img {
+    transition: transform 0.5s;
+}
+
+.banner-image:hover img {
+    transform: scale(1.03);
+}
+
+.banner-countdown {
+    margin-top: 30px;
+}
+
+.banner-countdown p {
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.countdown-timer {
+    display: flex;
+    gap: 15px;
+}
+
+.countdown-item {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.countdown-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    display: block;
+}
+
+.countdown-label {
+    font-size: 0.7rem;
+    color: #7f8c8d;
+    text-transform: uppercase;
+}
+
+/* Categories Section */
+.categories-section {
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    color: var(--text);
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #3498db;
+}
+
+.category-card {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 200px;
+    text-decoration: none;
+}
+
+.category-img {
+    height: 100%;
+}
+
+.category-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.category-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    color: white;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.category-overlay h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.category-overlay span {
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.category-card:hover .category-img img {
+    transform: scale(1.05);
+}
+
+.category-card:hover .category-overlay {
+    padding-bottom: 30px;
+}
+
+.category-card:hover .category-overlay span {
+    opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .banner-title {
+        font-size: 1.5rem;
+    }
+    
+    .banner-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-banner {
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .banner-content {
+        margin: 0 auto;
+    }
+    
+    .banner-cta {
+        justify-content: center;
+    }
+    
+    .banner-title {
+        font-size: 1.2rem;
+    }
+    
+    .countdown-timer {
+        justify-content: center;
+    }
+    
+    .category-card {
+        height: 150px;
+    }
+}
+
+
+:root {
+    --text-primary: #1a1a1a;
+    --text-secondary: #1a1a1a;
+    --border-color: #e0e0e0;
+    --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+
+.luxury-container {
+    width: 100%;
+    height: 490px;
+    padding: 5vw;
+    position: relative;
+    background: url('https://www.armitagephoto.com/wp-content/uploads/2021/05/product-photo-scaled.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+
+
+.collection-header {
+    font-size: 0.9rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: var(--text-secondary);
+    opacity: 0;
+    animation: fadeIn 0.8s 0.3s forwards;
+}
+
+.collection-title {
+    font-size: 2.2rem;
+    color: #4e4c4c;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    opacity: 0;
+    animation: fadeIn 0.8s 0.5s forwards;
+}
+
+.collection-subtitle {
+    font-weight: 500;
+    color: #5e5a5a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    max-width: 36rem;
+    margin-bottom: 3.5rem;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 0.8s 0.7s forwards;
+}
+
+.shop-now-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: var(--transition);
+    opacity: 0;
+    animation: fadeIn 0.8s 0.9s forwards;
+}
+
+.shop-now-btn:hover {
+    border-color: var(--text-primary);
+    padding-right: 0.5rem;
+}
+
+.shop-now-btn::after {
+    content: "→";
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+.shop-now-btn:hover::after {
+    transform: translateX(0.25rem);
+}
+
+.decorative-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100px;
+    background-color: var(--border-color);
+    opacity: 0;
+    animation: fadeIn 0.8s 1.1s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    
+    .luxury-container {
+        padding: 10vw 7vw;
+        height: 380px;
+    }
+
+    .collection-title{
+        font-size: 25px;
+    }
+    
+    .collection-header {
+        margin-bottom: 1.5rem;
+    }
+    
+    .collection-title {
+        margin-bottom: 1.5rem;
+    }
+    
+    .collection-subtitle {
+        margin-bottom: 2.5rem;
+    }
+}
